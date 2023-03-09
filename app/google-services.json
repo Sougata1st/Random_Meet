@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "239166849171",
+    "project_id": "meet-69da6",
+    "storage_bucket": "meet-69da6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239166849171:android:f3bf5230850dfaeda0cd66",
+        "android_client_info": {
+          "package_name": "com.example.testing.recyclerview.olivia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239166849171-gtsq1tu8n7mo5n209m69kurdpdi8k8qg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testing.recyclerview.olivia",
+            "certificate_hash": "ad6cfb41e874ad6c5e01663ef1e01041278de1bb"
+          }
+        },
+        {
+          "client_id": "239166849171-muv2uf944gt4hfv4vbt1uupnmt94tm2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1BOypD2KHvvCgPWqgEK7yu_bxrYV26Q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239166849171-muv2uf944gt4hfv4vbt1uupnmt94tm2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

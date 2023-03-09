@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Olivia</string>
+    <string name="terms_and_condition_text">By continuing you are agreeing to our terms and conditions</string>
+    <string name="please_login_to_continue">Please Login to continue</string>
+</resources>
