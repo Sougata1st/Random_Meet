@@ -58,6 +58,7 @@ class CallActivity : AppCompatActivity() {
         binding.micBtn.setOnClickListener {
             isAudio = !isAudio
             callJavaScriptFunction("javascript:toggleAudio(\"$isAudio\")")
+
 //            if (isAudio) {
 //                binding.micBtn.setImageResource(R.drawable.btn_unmute_normal)
 //            } else {

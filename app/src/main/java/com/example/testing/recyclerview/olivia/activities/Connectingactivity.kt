@@ -15,17 +15,19 @@ class Connectingactivity : AppCompatActivity() {
     lateinit var binding: ActivityConnectingactivityBinding
     lateinit var auth: FirebaseAuth
     var isOkay = false
+    lateinit var database: FirebaseDatabase
+    lateinit var username:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityConnectingactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
-        val database = FirebaseDatabase.getInstance()
+        database = FirebaseDatabase.getInstance()
         val profileString = intent.getStringExtra("userProfile")
 
         Glide.with(this).load(profileString).into(binding.userProfile)
 
-       val username = auth.currentUser?.uid
+        username = auth.currentUser?.uid!!
 
         database.reference.child("users")
             .orderByChild("status")
@@ -120,5 +122,13 @@ class Connectingactivity : AppCompatActivity() {
                 override fun onCancelled(error: DatabaseError) {}
             })
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        database.reference
+            .child("users")
+            .child(username)
+            .removeValue()
     }
 }
