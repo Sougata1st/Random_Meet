@@ -60,9 +60,9 @@ class CallActivity : AppCompatActivity() {
             callJavaScriptFunction("javascript:toggleAudio(\"$isAudio\")")
 
 //            if (isAudio) {
-//                binding.micBtn.setImageResource(R.drawable.btn_unmute_normal)
+//                binding.micBtn.setImageResource(R.drawable.numute_n.png)
 //            } else {
-//                binding.micBtn.setImageResource(R.drawable.btn_mute_normal)
+//                binding.micBtn.setImageResource(R.drawable.mute_p)
 //            }
         }
 
@@ -103,9 +103,7 @@ class CallActivity : AppCompatActivity() {
     fun setupWebView() {
         binding.webView.webChromeClient = object : WebChromeClient() {
             override fun onPermissionRequest(request: PermissionRequest) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    request.grant(request.resources)
-                }
+                request.grant(request.resources)
             }
         }
         binding.webView.settings.javaScriptEnabled = true
