@@ -60,7 +60,7 @@ class CallActivity : AppCompatActivity() {
             callJavaScriptFunction("javascript:toggleAudio(\"$isAudio\")")
 
 //            if (isAudio) {
-//                binding.micBtn.setImageResource(R.drawable.numute_n)
+//                binding.micBtn.setImageResource(R.drawable.nmute_n)
 //            } else {
 //                binding.micBtn.setImageResource(R.drawable.mute_p)
 //            }
