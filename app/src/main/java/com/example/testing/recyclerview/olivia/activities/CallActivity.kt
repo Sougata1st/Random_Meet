@@ -18,6 +18,7 @@ import com.google.firebase.database.annotations.NotNull
 import models.InterfaceKt
 import models.User
 import java.util.*
+import com.example.testing.recyclerview.olivia.R
 
 
 class CallActivity : AppCompatActivity() {
@@ -59,21 +60,21 @@ class CallActivity : AppCompatActivity() {
             isAudio = !isAudio
             callJavaScriptFunction("javascript:toggleAudio(\"$isAudio\")")
 
-//            if (isAudio) {
-//                binding.micBtn.setImageResource(R.drawable.nmute_n)
-//            } else {
-//                binding.micBtn.setImageResource(R.drawable.mute_p)
-//            }
+            if (isAudio) {
+                binding.micBtn.setImageResource(R.drawable.numute_n)
+            } else {
+                binding.micBtn.setImageResource(R.drawable.mute_p)
+            }
         }
 
         binding.videoBtn.setOnClickListener {
             isVideo = !isVideo
             callJavaScriptFunction("javascript:toggleVideo(\"$isVideo\")")
-//            if (isVideo) {
-//                binding.videoBtn.setImageResource(R.drawable.btn_video_normal)
-//            } else {
-//                binding.videoBtn.setImageResource(R.drawable.btn_video_muted)
-//            }
+            if (isVideo) {
+                binding.videoBtn.setImageResource(R.drawable.btn_video_normal)
+            } else {
+                binding.videoBtn.setImageResource(R.drawable.btn_video_muted)
+            }
         }
         if (!selfEnd) {
             try {
