@@ -16,49 +16,50 @@ RandCall is a random video calling app that connects users globally using **WebR
 ### 1. **Intro Screen**
 When the app starts, users are greeted with an **Intro Screen** containing a "Get Started" button.
 
-![Intro Screen](images/intro_screen.png)
+<img src="images/intro_screen.png" alt="Intro Screen" width="300"/>
 
 ---
 
 ### 2. **Google Sign-In**
 Users sign in using their Google account.
 
-![Google Sign-In](images/google_signin_1.png)
-![Google Sign-In Successful](images/google_signin_2.png)
+<img src="images/google_signin_1.png" alt="Google Sign-In" width="300"/>
+<img src="images/google_signin_2.png" alt="Google Sign-In Successful" width="300"/>
 
 ---
 
 ### 3. **Home Screen**
 Users can find a match by clicking the **Find Button**.
 
-![Home Screen](images/home_screen.png)
+<img src="images/home_screen.png" alt="Home Screen" width="300"/>
 
 ---
 
 ### 4. **Permission Request**
 Before joining a call, users must grant **Camera and Microphone** permissions.
 
-![Permission Request](images/permission_request.png)
+<img src="images/permission_request.png" alt="Permission Request" width="300"/>
 
 ---
 
 ### 5. **Finding Screen**
 Once permissions are granted, users enter the **Finding Screen**, waiting to match with another user.
 
-![Finding Screen](images/finding_screen.png)
+<img src="images/finding_screen.png" alt="Finding Screen" width="300"/>
 
 ---
 
 ### 6. **Video Call Screen**
 When another user is found, the **video call starts**.
 
-![Video Call Screen](images/video_call.png)
+<img src="images/video_call.png" alt="Video Call Screen" width="300"/>
 
 ---
 
 ### 7. **Call Controls**
 Users can **Mute**, **Toggle Camera**, or **End Call** using the call controls.
 
+<img src="images/call_controls.png" alt="Call Controls" width="300"/>
 
 ---
 
@@ -80,26 +81,26 @@ Watch a full walkthrough of **RandCall** in action:
 3. Install the necessary dependencies using Gradle.
 
 4. Set up Firebase:
-    - Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
-    - Add an Android app to the project using your app's package name.
-    - Download the **google-services.json** file and place it in your app's `app` directory (`app/google-services.json`).
-    - Enable **Google Sign-In** in Firebase Authentication.
-    - Add the Firebase SDK by ensuring your `build.gradle` files are configured correctly:
+   - Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
+   - Add an Android app to the project using your app's package name.
+   - Download the **google-services.json** file and place it in your app's `app` directory (`app/google-services.json`).
+   - Enable **Google Sign-In** in Firebase Authentication.
+   - Add the Firebase SDK by ensuring your `build.gradle` files are configured correctly:
 
-      **Project-level `build.gradle`**:
-      ```gradle
-      dependencies {
-          classpath 'com.google.gms:google-services:4.4.1' // Check for latest version
-      }
-      ```
+     **Project-level `build.gradle`**:
+     ```gradle
+     dependencies {
+         classpath 'com.google.gms:google-services:4.4.1' // Check for latest version
+     }
+     ```
 
-      **App-level `build.gradle`**:
-      ```gradle
-      plugins {
-          id 'com.android.application'
-          id 'com.google.gms.google-services'
-      }
-      ```
+     **App-level `build.gradle`**:
+     ```gradle
+     plugins {
+         id 'com.android.application'
+         id 'com.google.gms.google-services'
+     }
+     ```
 
 5. Run the project:
     ```bash
@@ -110,15 +111,12 @@ Watch a full walkthrough of **RandCall** in action:
 
 ---
 
-
----
-
 ## Tech Stack
 
-- **Frontend**: xml andeoid
+- **Frontend**: XML (Android)
 - **Backend**: Firebase (for authentication)
 - **Video Call**: WebRTC, PeerJS
-- **State Management**: JavaScript
+- **State Management**: Kotlin
 
 ---
 
@@ -129,6 +127,3 @@ Feel free to contribute by opening issues or pull requests.
 
 ## License
 This project is licensed under the **MIT License**.
-
----
-
