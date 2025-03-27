@@ -59,13 +59,11 @@ When another user is found, the **video call starts**.
 ### 7. **Call Controls**
 Users can **Mute**, **Toggle Camera**, or **End Call** using the call controls.
 
-<img src="images/call_controls.png" alt="Call Controls" width="300"/>
-
 ---
 
 ## 📹 Video Demonstration
-Watch a full walkthrough of **RandCall** in action:  
-[![Watch the video](images/finding_screen.png)](images/randcall_demo.mp4)
+[Watch the video here](https://youtu.be/1c8dlonvf0Q?si=j1DfdCjItZg_4cfl)
+
 
 ---
 
